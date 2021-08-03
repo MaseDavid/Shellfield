@@ -1,0 +1,232 @@
+html,body{
+    color: #222;
+    height: 100%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    
+    --nav-load-time: 300ms;
+    --nav-link-time :600ms;
+    --project-time: 1000ms;
+    scroll-behavior: smooth;
+}
+/* Nav */
+nav{
+    animation: nav-load var(--nav-load-time) ease-in;
+}
+.navbar{
+    padding: .8rem;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar >ul >li{
+    padding-right: 10px;
+    font-size: 3em;
+}
+
+.navbar-nav li{
+    padding-right: 15px ;
+    animation-name: nav-link-load ;
+    animation-duration: var(--nav-link-time);
+    animation-timing-function: ease-in;
+    animation-delay: var(--nav-load-time);
+    animation-fill-mode: forwards;
+    scale: (0);
+}
+
+.navbar-brand > img{
+height: auto;
+width: 60%;
+}
+
+.navbar-nav > li:hover{
+    color: turquoise;
+}
+.nav-link{
+    font-size: 2.1em !important;
+}
+
+/* carousel */
+.carousel-inner img{
+    height: 100%;
+    width: 100%;
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+}
+.carousel-caption h1{
+    font-size: 600%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px black;
+}
+.jumbotron{
+    padding: 2rem;
+    border-radius: 0;
+}
+
+.render{
+    margin: 0 auto;
+    width: 95;
+    animation: render 1000ms ease-in var(--nav-link-time) ;
+}
+.padding{
+    padding-bottom: 2rem;
+}
+.lifecycle{
+    padding-bottom: 50px;
+    width: 95%;
+    animation-name: lifecycle-load;
+    animation-duration: var(--project-time);
+    animation-timing-function: ease-in;
+    animation-delay: var(--nav-link-time);
+
+}
+.project{
+    padding-bottom: .8em;
+    animation: project var(--nav-load-time) ease-in;
+}
+
+.services{
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.b {
+    border-top: 2px solid goldenrod;
+}
+
+.render > .PR >li{
+    padding-top: 3em;
+}
+.statement{
+    width: 95%;
+}
+.statement  p{
+    color: goldenrod;
+    font-size: 2rem;
+}
+
+hr.light{
+    border-top: 2px solid #ffd700;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.address i{
+    padding-right: 20px;
+}
+.address{
+    text-align: center;
+}
+.Connect{
+    background-color: #3f3f3f;
+    color: white;
+}
+.connect h2{
+    padding: 1.5rem;
+}
+.social a {
+    padding: 4rem;
+    padding-top: 1rem;
+}
+.fa-facebook{
+    font-size: 4em;
+}
+.fa-twitter{
+    font-size: 4em;
+}
+.fa-phone-square , .fa-envelope{
+  font-size: 2em;  
+}
+.car > img{
+height: 100%;
+width: 100%;
+}
+.address > img{
+height:50px;
+}
+
+
+.h hr{
+    border-top: 2px solid #ffd700;
+    width: 100%;
+}
+h1{
+    animation: what 500ms ease-out;  
+}
+ 
+/* animation */
+@keyframes nav-load{
+0%{
+    transform: translateY(-100%);
+}
+
+100%{
+    transform: translateY(0);
+}
+}
+
+@keyframes what{
+    0%{
+        transform: scale(0);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+    }
+
+@keyframes nav-link-load {
+    0%{
+        transform: translateY(-100%);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: translateY(1);
+    }
+}
+
+@keyframes render{
+    0%{
+        transform: translateY(-100%);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+    }
+
+
+@keyframes lifecycle-load{
+    0%{
+        transform: translateY(+100%);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+    }
+
+/* Media querries */
+@media(max-width : 992px){
+    .social a {
+        font-size: 3.5em;
+        padding-right: 2.5rem;
+    }
+}
+    @media(max-width : 768px){
+.social a {
+    font-size: 2.5em;
+    padding-right: 1.5em;
+}
+    }
+
+    @media (max-width : 576px){
+        .social a {
+            font-size: 1.5em;
+            padding: 1em;
+        }
+    }
+
