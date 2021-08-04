@@ -212,21 +212,32 @@ h1{
 /* Media querries */
 @media(max-width : 992px){
     .social a {
-        font-size: 3.5em;
-        padding-right: 2.5rem;
+        font-size: 1.5em;
+        padding-right: 2rem;
     }
 }
     @media(max-width : 768px){
 .social a {
-    font-size: 2.5em;
+    font-size: 1.5em;
     padding-right: 1.5em;
 }
     }
 
-    @media (max-width : 576px){
+    @media (max-width : 480px){
         .social a {
             font-size: 1.5em;
             padding: 1em;
         }
+        .carousel-caption h1{
+            position: relative;
+            top: 30%;
+            font-size: 300% ;
+        }
+       
     }
-
+      @media(min-width : 768px){
+       .PR , .Web .Dev, .Media{
+          
+            width: 25%;
+        }
+    }  
