@@ -1,8 +1,8 @@
 html,body{
-    color: #222;
+    color: #555;
     height: 100%;
     width: 100%;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
     --nav-load-time: 300ms;
     --nav-link-time :600ms;
@@ -15,7 +15,7 @@ nav{
 }
 .navbar{
     padding: .8rem;
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
 }
 .navbar >ul >li{
     padding-right: 10px;
@@ -34,14 +34,14 @@ nav{
 
 .navbar-brand > img{
 height: auto;
-width: 60%;
+width: 50%;
 }
 
 .navbar-nav > li:hover{
     color: turquoise;
 }
 .nav-link{
-    font-size: 2.1em !important;
+    font-size: 2.1em ;
 }
 
 /* carousel */
@@ -52,6 +52,7 @@ width: 60%;
 .carousel-caption{
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
 }
 .carousel-caption h1{
     font-size: 600%;
@@ -61,16 +62,121 @@ width: 60%;
 .jumbotron{
     padding: 2rem;
     border-radius: 0;
+    margin-top: 5px;
+}
+
+.row{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Client h2{
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.title{
+    position: relative;
+}
+.title::after{
+    content: "";
+    background: #ffd700;
+    width: 180px;
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.modal-body ul li{
+    list-style-type: none;
+}
+
+/* brands */
+.brands{
+    margin: 100px auto;
+}
+
+.brand{
+    width: 160px;
+ 
+}
+
+.brand img{
+    width: 100%;
+    filter: opacity(95%);
+  
+}
+/* Life cycle */
+.lifecycle{
+    justify-content: space-around;
+  
+  /* background: linear-gradient(white , grey); */
+  margin-top: 100px;
+}
+
+
+/* map */
+.connect #map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.row .cycle{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.fa-business-time{
+    color: #341e85;
+    font-size: 3rem;
+    margin: 20px;
+}
+.fa-book-open{
+    color: #0b061b;
+    font-size: 3rem;
+    margin: 20px;
+}
+.fa-comment-dots{
+    color: #215366;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.fa-file-contract{
+    color: #4b0e27;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+/* pv */
+.pv{
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.philosophy, .Vision{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.fa-quote-left{
+    color: #341e85;
+    font-size: 2rem;
+    margin: 20px;
+}
+.Vision >.fa-quote-left{
+color: rgb(18, 83, 18);
 }
 
 .render{
     margin: 0 auto;
     width: 95;
     animation: render 1000ms ease-in var(--nav-link-time) ;
+    /* background: linear-gradient(#341e85 , rgb(3, 46, 3)); */
 }
-.padding{
-    padding-bottom: 2rem;
-}
+/* .padding{
+    padding-top: 100px;
+} */
 .lifecycle{
     padding-bottom: 50px;
     width: 95%;
@@ -89,18 +195,20 @@ width: 60%;
     width: 75%;
     margin: 0 auto;
     margin-bottom: 1rem;
+    padding-top: 100px;
 }
 
 .b {
     border-top: 2px solid goldenrod;
 }
 
-.render > .PR >li{
-    padding-top: 3em;
-}
-.statement{
+/* .render{
+ 
+  
+} */
+/* .statement{
     width: 95%;
-}
+} */
 .statement  p{
     color: goldenrod;
     font-size: 2rem;
@@ -216,14 +324,14 @@ h1{
         padding-right: 2rem;
     }
 }
-    @media(max-width : 768px){
+    @media (max-width : 768px){
 .social a {
     font-size: 1.5em;
     padding-right: 1.5em;
 }
     }
 
-    @media (max-width : 480px){
+    @media (max-width : 556px){
         .social a {
             font-size: 1.5em;
             padding: 1em;
@@ -235,7 +343,7 @@ h1{
         }
        
     }
-      @media(min-width : 768px){
+      @media (min-width : 768px){
        .PR , .Web .Dev, .Media{
           
             width: 25%;
