@@ -339,9 +339,23 @@ h1{
         .carousel-caption h1{
             position: relative;
             top: 30%;
-            font-size: 300% ;
+            font-size: 1.3rem ;
         }
        
+        .carousel-caption h3{
+            /* position: relative;
+            top: 30%; */
+            font-size: 1rem ;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .jumbotron{
+            padding: 1rem;
+            border-radius: 0;
+            margin-top: 5px;
+           
+        }
     }
       @media (min-width : 768px){
        .PR , .Web .Dev, .Media{
