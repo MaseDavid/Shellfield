@@ -95,7 +95,7 @@ width: 50%;
 
 /* brands */
 .brands{
-    margin: 100px auto;
+    margin: 10x auto;
 }
 
 .brand{
@@ -355,6 +355,27 @@ h1{
             border-radius: 0;
             margin-top: 5px;
            
+        }
+        .modal-body{
+            overflow: hidden;
+        }
+
+        .Vision{
+            width: 350px;
+        }
+
+        .Vision img{
+            width: 100%;
+            height: auto;
+        }
+        #clients{
+            margin: 20px 5px 20px 5px;
+        }
+
+        #clients .brands{
+            margin: 0;
+            padding: 0;
+
         }
     }
       @media (min-width : 768px){
