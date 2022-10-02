@@ -110,12 +110,15 @@ width: 50%;
 /* Life cycle */
 .lifecycle{
     justify-content: space-around;
-  
-  /* background: linear-gradient(white , grey); */
   margin-top: 100px;
 }
 
+/* installation */
 
+.installation > img{
+    width: 100%;
+    height: auto;
+}
 /* map */
 .connect #map{
     width: 100%;
